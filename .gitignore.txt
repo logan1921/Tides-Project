@@ -1,0 +1,8 @@
+#Ignore Virtual Environements
+env
+#Ignore Mac System Files
+.DS_store
+# Ignore all csv files
+*.csv
+# Ignore files related to api Keys
+.env
