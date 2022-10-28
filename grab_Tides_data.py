@@ -5,14 +5,14 @@
 # python script.py - to run the scsript
 # pip install module - install missing modules
 
-import requests
-import pandas as pd
-import numpy as np
 from dateutil import rrule
 from datetime import datetime, timedelta
-import pyproj as proj
 import easygui
 from easygui import *
+import numpy as np
+import pandas as pd
+import pyproj as proj
+import requests
 
 #load up gui
 text = "Please enter in StationID, Start Year and End Year for data download. StationID can be found in csv in folder (Point Atkinson StationID is given as reference)."
@@ -50,14 +50,14 @@ for column in timeseriesdf:
     timeseries_id_df = pd.json_normalize(timeseries_id_df)
     frames.append(timeseries_id_df)
 tdf = pd.concat(frames)
-tdf.to_csv('Timeseries_metadata.csv', index=False)
+tdf.to_csv(f'{stationID}-timeseries_metadata.csv', index=False)
 
 #retrieve all benchmark metadata regarding the stationID
 response = requests.get(f'https://api-iwls.dfo-mpo.gc.ca/api/v1/benchmarks?stationId={stationID}')
 print(f'https://api-iwls.dfo-mpo.gc.ca/api/v1/benchmarks/{stationID}')
 dic = response.json()
 bdf = pd.json_normalize(dic)
-bdf.to_csv('Benchmark_metadata.csv', index=False)
+bdf.to_csv(f'{stationID}-benchmark_metadata.csv', index=False)
 
 # download all water level observations from station ID
 frames =[]
@@ -77,7 +77,7 @@ for year in range(int(output[1]),int(output[2])+1):
         df = pd.DataFrame(dic)
         frames.append(df)
 df = pd.concat(frames)
-df.to_csv('output.csv', index=False) 
+df.to_csv(f'{stationID}-{output[1]}-{output[2]}.csv', index=False) 
 
 
 """ tdf= tdf.loc[tdf['code']=='wlo']
