@@ -28,8 +28,3 @@ Install all of the dependencies with pip by using the requirements.txt file:
 Now you can run the intended python script to download DFO water levels. Use the command:
 
 `py grab_Tides_data.py`
-
-
-
-Project Organization
-------------
