@@ -3,7 +3,6 @@ DFO Water Level Download
 
 This python script was developed to download water levels from the DFO API. The script will bring up a small gui that will allow the user to input a StationIDI and Start Year and End Year to download water levels.
 
-
 Getting Started
 ------------
 Ensure you have Python 3.10 or greater installed`  
@@ -17,7 +16,7 @@ https://git-scm.com/downloads
 
 Code Example
 ------------
-Clone the Tides-Project repository:
+In the folder you want to work in, open Powershell in admin mode and clone the local repository:
 
 `git clone https://github.com/logan1921/Tides-Project`  
 
