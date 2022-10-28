@@ -16,7 +16,7 @@ https://git-scm.com/downloads
 
 Code Example
 ------------
-In the folder you want to work in, open Powershell in admin mode and clone the local repository:
+In the folder you want to work in, open cmd.exe in admin mode and clone the local repository:
 
 `git clone https://github.com/logan1921/Tides-Project`  
 
@@ -27,6 +27,10 @@ In the folder you have cloned the git repository, open up Windows Power Shell. S
 This will open a virtual environment where all of your packages can be independently downloaded and used over your own personal site-packages of python libraries. If you are using a Windows machine, activate the virtual environment by using the command:
 
 `.\env\Scripts\activate`
+
+Change directories to 'Tides-Project
+
+`cd ./Tides-Project`
 
 Install all of the dependencies with pip by using the requirements.txt file:
 

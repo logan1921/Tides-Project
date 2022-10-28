@@ -11,7 +11,6 @@ import easygui
 from easygui import *
 import numpy as np
 import pandas as pd
-import pyproj as proj
 import requests
 
 #load up gui
