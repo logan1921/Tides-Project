@@ -5,7 +5,7 @@ This python script was developed to download water levels from the DFO API. The 
 
 Getting Started
 ------------
-Ensure you have Python 3.10 or greater installed`  
+Ensure you have Python 3.10 or greater installed - otherwise you will run into installation errors with python modules(pandas)  
 
 https://www.python.org/downloads/
 
@@ -16,11 +16,11 @@ https://git-scm.com/downloads
 
 Code Example
 ------------
-In the folder you want to work in, open cmd.exe in admin mode and clone the local repository:
+In the folder you want to work in, open **cmd.exe** in admin mode and clone the local repository:
 
 `git clone https://github.com/logan1921/Tides-Project`  
 
-In the folder you have cloned the git repository, open up Windows Power Shell. Start a virtual environment with python by using the command (in this case `py` refers to python):
+.Then start a virtual environment with python by using the command (in this case `py` refers to python):
 
 `py -m venv env`  
 
