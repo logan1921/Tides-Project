@@ -20,7 +20,7 @@ In the folder you want to work in, open **cmd.exe** in admin mode and clone the 
 
 `git clone https://github.com/logan1921/Tides-Project`  
 
-.Then start a virtual environment with python by using the command (in this case `py` refers to python):
+Then start a virtual environment with python by using the command (in this case `py` refers to python):
 
 `py -m venv env`  
 
